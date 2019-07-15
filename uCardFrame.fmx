@@ -1,0 +1,216 @@
+object FrameCard: TFrameCard
+  HitTest = False
+  Size.Width = 389.000000000000000000
+  Size.Height = 579.000000000000000000
+  Size.PlatformDefault = False
+  OnResize = FrameResize
+  object BackgroundRect: TRectangle
+    Align = Contents
+    Fill.Color = claWhite
+    HitTest = False
+    Size.Width = 389.000000000000000000
+    Size.Height = 579.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+  end
+  object BackgroundImage: TImage
+    MultiResBitmap.Height = 1326
+    MultiResBitmap.Width = 1306
+    MultiResBitmap = <
+      item
+      end>
+    Align = Contents
+    HitTest = False
+    MarginWrapMode = Tile
+    Opacity = 0.300000011920929000
+    Margins.Left = -400.000000000000000000
+    Margins.Top = -400.000000000000000000
+    Margins.Right = -400.000000000000000000
+    Margins.Bottom = -400.000000000000000000
+    Size.Width = 1189.000000000000000000
+    Size.Height = 1379.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object CardRect: TRectangle
+    Align = Contents
+    Fill.Color = claWhite
+    HitTest = False
+    Margins.Left = 50.000000000000000000
+    Margins.Top = 100.000000000000000000
+    Margins.Right = 50.000000000000000000
+    Margins.Bottom = 100.000000000000000000
+    Size.Width = 289.000000000000000000
+    Size.Height = 379.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    XRadius = 1.000000000000000000
+    YRadius = 1.000000000000000000
+    object CardBackgroundImage: TImage
+      MultiResBitmap = <
+        item
+        end>
+      Align = Contents
+      HitTest = False
+      Size.Width = 289.000000000000000000
+      Size.Height = 379.000000000000000000
+      Size.PlatformDefault = False
+      WrapMode = Stretch
+    end
+    object CardLayout: TLayout
+      Align = Client
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Size.Width = 279.000000000000000000
+      Size.Height = 319.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object CardImage: TImage
+        MultiResBitmap.Height = 96
+        MultiResBitmap.Width = 96
+        MultiResBitmap.LoadSize = 2
+        MultiResBitmap = <
+          item
+          end
+          item
+            Scale = 2.000000000000000000
+          end
+          item
+            Scale = 3.000000000000000000
+          end
+          item
+            Scale = 4.000000000000000000
+          end
+          item
+            Scale = 5.000000000000000000
+          end>
+        Align = VertCenter
+        HitTest = False
+        Margins.Left = 60.000000000000000000
+        Margins.Right = 60.000000000000000000
+        Position.X = 60.000000000000000000
+        Position.Y = 113.000000000000000000
+        Size.Width = 159.000000000000000000
+        Size.Height = 206.000000000000000000
+        Size.PlatformDefault = False
+        object FillCardRGBEffect: TFillRGBEffect
+          Enabled = False
+          Color = claCornflowerblue
+        end
+      end
+      object TextLayout: TLayout
+        Align = MostTop
+        Size.Width = 279.000000000000000000
+        Size.Height = 113.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object CardTitleLabel: TLabel
+          Align = Top
+          StyledSettings = [Family, Size, FontColor]
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 15.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Position.X = 3.000000000000000000
+          Position.Y = 15.000000000000000000
+          Size.Width = 273.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.HorzAlign = Center
+          Text = 'Title'
+          TabOrder = 0
+        end
+        object CardTextLabel: TLabel
+          Align = Client
+          Margins.Left = 20.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 20.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 239.000000000000000000
+          Size.Height = 65.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.HorzAlign = Center
+          TextSettings.VertAlign = Leading
+          Text = 'Description'
+          TabOrder = 1
+        end
+      end
+    end
+    object CardNextRectBTN: TRectangle
+      Align = Bottom
+      ClipChildren = True
+      Fill.Color = claCornflowerblue
+      Position.Y = 329.000000000000000000
+      Size.Width = 289.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      OnClick = CardNextRectBTNClick
+      OnMouseDown = CardNextRectBTNMouseDown
+      object CardNextLabel: TLabel
+        Align = Client
+        StyledSettings = [Family, Size, FontColor]
+        Margins.Left = 3.000000000000000000
+        Margins.Top = 3.000000000000000000
+        Margins.Right = 3.000000000000000000
+        Margins.Bottom = 3.000000000000000000
+        Size.Width = 283.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.HorzAlign = Center
+        Text = 'Next'
+        TabOrder = 0
+      end
+    end
+  end
+  object FooterNextRectBTN: TRectangle
+    Align = Bottom
+    ClipChildren = True
+    Fill.Color = claCornflowerblue
+    Position.Y = 529.000000000000000000
+    Size.Width = 389.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    OnClick = CardNextRectBTNClick
+    OnMouseDown = FooterNextRectBTNMouseDown
+    object FooterNextLabel: TLabel
+      Align = Client
+      StyledSettings = [Family, Size]
+      Margins.Left = 3.000000000000000000
+      Margins.Top = 3.000000000000000000
+      Margins.Right = 3.000000000000000000
+      Margins.Bottom = 3.000000000000000000
+      Size.Width = 383.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.HorzAlign = Center
+      Text = 'Next'
+      TabOrder = 0
+    end
+  end
+  object CircleMD: TCircle
+    Fill.Color = claWhite
+    HitTest = False
+    Opacity = 0.250000000000000000
+    Position.X = 13.000000000000000000
+    Position.Y = 24.000000000000000000
+    Size.Width = 50.000000000000000000
+    Size.Height = 500.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    Visible = False
+    object FloatAnimationMD: TFloatAnimation
+      Duration = 0.100000001490116100
+      OnProcess = FloatAnimationMDProcess
+      OnFinish = FloatAnimationMDFinish
+      PropertyName = 'Size.Height'
+      StartValue = 0.000000000000000000
+      StopValue = 500.000000000000000000
+      Trigger = 'IsVisible=true'
+    end
+  end
+end
